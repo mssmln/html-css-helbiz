@@ -1,0 +1,4 @@
+perchè in #get-app div a non ho avuto bisogno di usare display inline block?
+la img iphone in get the app non mi segue quando restringo, idem le helbiz
+non riesco a fare andare via gli offset quando cambio in col-md
+a 477 esce lo spazio bianco nella foto mobility ma se aumento l'altezza si aggiusta, è corretto fare così?

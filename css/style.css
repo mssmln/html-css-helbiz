@@ -1,77 +1,291 @@
-body {
+body{
   font-family: 'Open Sans', sans-serif;
-  font-size:16px;
+  font-size: 16px;
 }
 
-a {
-  text-decoration: none;
+.blue{background-color: blue;}
+
+
+/* HEADER */
+
+/* NAVIGATION BAR */
+header .header-top{
+  padding: 25px 0;
 }
 
-ul {
+header li{
+  display: inline-block;
   list-style: none;
 }
 
-/* header */
-.header-top {
-  height: 80px;
-  line-height: 80px;
-}
-
-ul.navbar-menu li,
-ul.navbar-language li {
-  display: inline-block;
-  padding-right: 10px;
-}
-
-/* 1rem equivale al font specificato nel body,
-nel nostro caso 1rem 16px
-quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
-
-ul.navbar-menu li a,
-ul.navbar-language li a {
-  color: #343434;
+header a{
+  text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
+  color: #323232;
 }
 
-.header-top .logo {
-  vertical-align: middle;
+header nav{
+  text-align: right;
 }
 
-ul.navbar-language :not(li:last-child) a {
-  border-right: 2px solid black;
-  padding-right: 10px;
+#menu li{
+  padding: 0 15px 0 10px;
 }
 
-/* jumbo */
-.jumbo {
+#languages li{
+  border-right: 1px solid #323232;
+  padding: 0 7px;
+}
+
+#languages li:last-child{
+  border-right: 0;
+}
+
+
+/* /NAVIGATION BAR */
+
+
+
+.jumbotron{
   background-image: url('../img/hero-bg.jpg');
+  height: 680px;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
   position: relative;
 }
 
-.jumbo h1 {
-  font-size: 32px;
+.jumbotron h1{
+  color: #FFFFFF;
+  font-size: 60px;
+  margin-bottom: 15px;
 }
 
-.jumbo p {
-  margin: 10px 0;
+.jumbotron p{
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
-.jumbo .testo {
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+
+/* /HEADER */
+
+
+
+/* MAIN */
+
+/* PRODUCTS */
+#left-products{
+  text-align: center;
+  padding: 50px 20px 50px 120px;
+}
+
+.products img{
+  height: 500px;
+}
+
+.products h3{
+  font-size: 40px;
+  margin: 60px 0 15px 0;
+}
+
+.products p{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.products a{
+  font-size: 20px;
+  text-decoration: none;
+  color: blue;
+}
+
+#right-products{
+  text-align: center;
+  padding: 50px 120px 50px 20px;
+}
+
+#left-products .bg-c,
+#right-products .bg-c{
+  background-color: #FAFAFA;
+}
+
+
+/* /PRODUCTS */
+
+
+/* FUNCTIONING */
+#functioning{
+  height: 1000px;
+}
+
+#functioning h2{
+  font-size: 50px;
+  margin-top: 120px;
+}
+
+#functioning h4{
+  font-size: 20px;
+  margin: 170px 0 0 120px;
+}
+
+#functioning p{
+  font-size: 20px;
+  margin-left: 120px;
+}
+
+.banner{
+  background-image: url('../img/index-banner.1f6fd0a.jpg');
+  height: 650px;
+  background-position-x: 20%;
+}
+
+.banner img{
+  height: 700px;
+  margin-top: 300px;
+}
+
+
+/* /FUNCTIONING */
+
+
+
+/* MOBILITY */
+#mobility{
+  background-image: url('../img/scooter.f0a0397.jpg');
+  margin: 50px 100px 30px;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#mobility h2{
+  font-size: 70px;
+  margin-top: 150px;
   color: white;
-  width: 100%;
 }
+
+#mobility p{
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  margin: 30px 0 20px 0;
+}
+
+#mobility a{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* /MOBILITY */
+
+
+
+/* GET THE APP */
+#get-app{
+  padding: 0 20px 0 100px;
+  text-align: center;
+  color: white;
+}
+
+#get-app #bg1{
+  background: linear-gradient(0deg, #253038, #405569);
+}
+
+#get-app h2, #find-us h2{
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+#get-app p, #find-us p{
+  font-size: 25px;
+  margin: 15px 0 20px 0;
+}
+
+#get-app div a, #find-us div a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+#get-app img{
+  margin-top: 20px;
+}
+
+#find-us{
+  padding: 0 100px 0 20px;
+  text-align: center;
+  color: white;
+}
+
+#find-us #bg2{
+  background-image: url('../img/city.7c8c928.jpg');
+  height: 638px;
+  background-size: cover;
+}
+
+/* /GET THE APP */
+
+
+
+/* FAMILY */
+
+
+/* /FAMILY */
+
+
+
+
+
+
+/* /MAIN */
+
+
+
+/* FOOTER */
+
+/* /FOOTER */
+
+
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 992px){
-  .jumbo h1 {
-    font-size: 26px;
+  #menu,
+  #languages{}
+
+  #left-products,
+  #right-products,
+  #get-app,
+  #find-us{
+    padding: 0;
   }
+
+  .banner img{
+    display: none;
+  }
+
+  #mobility{
+    margin: 0;
+  }
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px){
+
+  /* #mobility{
+    height: 0;
+  } */
+
+
+
 }
